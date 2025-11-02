@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Página de doações da Conecta ONG — contribua para projetos e acompanhe metas.">
+  <title>Doações — Conecta ONG</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Ir para o conteúdo</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">Conecta ONG</h1>
+      <nav id="mainNav" class="main-nav" aria-label="Menu principal">
+        <a href="index.html">Início</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="voluntarios.html">Voluntários</a>
+        <a href="doacoes.html" aria-current="page">Doações</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <h2>Contribua com uma causa</h2>
+    <p>Escolha um valor e a forma de pagamento. Todas as doações têm prestação de contas.</p>
+
+    <form id="donation-form" action="#" method="post" aria-describedby="don-desc">
+      <p id="don-desc">Valores em reais (R$). Campos com * são obrigatórios.</p>
+
+      <label for="valor">Valor (R$)*</label>
+      <input id="valor" name="valor" type="number" min="1" step="1" required>
+
+      <label for="metodo">Método de pagamento*</label>
+      <select id="metodo" name="metodo" required>
+        <option value="">Selecione...</option>
+        <option value="pix">Pix</option>
+        <option value="cartao">Cartão de Crédito</option>
+        <option value="boleto">Boleto</option>
+      </select>
+
+      <label for="nome">Nome no cartão (se aplicável)</label>
+      <input id="nome" name="nome" type="text" autocomplete="cc-name">
+
+      <input type="submit" value="Doar agora">
+    </form>
+
+    <section aria-labelledby="progress">
+      <h3 id="progress">Metas em tempo real</h3>
+      <p>Meta do mês: R$ 10.000 — Arrecadado: R$ 6.200 (62%)</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Conecta ONG</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
 
